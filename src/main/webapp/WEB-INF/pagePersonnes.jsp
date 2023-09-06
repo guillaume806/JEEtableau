@@ -1,4 +1,4 @@
-<%--
+<%@ page import="models.Personne" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 06/09/2023
@@ -18,7 +18,7 @@
 <table class="table">
     <thead>
     <tr>
-        <% for (String pre : prenoms) { %>
+        <% for (Personne pre : personnes) { %>
         <th scope="col"><%= pre %></th>
         <% } %>
     </tr>
