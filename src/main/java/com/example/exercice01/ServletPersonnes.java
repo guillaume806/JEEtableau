@@ -20,7 +20,7 @@ public class ServletPersonnes extends HttpServlet {
     @Override
     public void init() throws ServletException {
 
-        List<Personne> personnes = new ArrayList<>();
+        List<Personne> personnes = new ArrayList<Personne>();
 
 
         personnes.add(new Personne("Doe", "John", 30));
@@ -32,7 +32,7 @@ public class ServletPersonnes extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("prenoms", prenoms);
+        req.setAttribute("personnes", personnes);
         getServletContext().getRequestDispatcher("/WEB-INF/pagePersonnes.jsp").forward(req, resp);
     }
 }
