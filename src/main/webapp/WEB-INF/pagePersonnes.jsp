@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="personnes" type="java.util.ArrayList<java.lang.String>" scope="request" />
+<jsp:useBean id="personnes" type="java.util.ArrayList<com.example.exercice01.ServletPersonnes>" scope="request" />
 <html>
 <head>
     <%@ include file="bootstrapImports.html"%>
